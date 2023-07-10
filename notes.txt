@@ -1,0 +1,27 @@
+
+Model 
+	- Model interacts with database
+	- Also executes buisness logic
+	
+View
+	- What user sees on the screen
+	- Generates UI for the user
+	
+Controller
+	- Takes user input also called as request parameters
+	- Middle man between model and view
+
+- MVC is a design patterm
+- MVC pattern is used for building web, mobile, desktop app
+ - ASP.net MVC is a .NEt framework which follows MVC design pattern
+ - ASP.net MVC is used for web development
+
+- Role of controller is to handling an HTTP Request
+
+Action Parameters--
+	- Input to our actions
+
+Parameter Sources
+	- In the URL - /movies/edit/1
+	- In the query String - /movies/edit?id=1
+	- In the form data - id =1
