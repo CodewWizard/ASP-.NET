@@ -25,3 +25,15 @@ Parameter Sources
 	- In the URL - /movies/edit/1
 	- In the query String - /movies/edit?id=1
 	- In the form data - id =1
+
+- Attrbute Routing is better and modern way to write the custom routes	
+- Every Controller has property called viewdata which is of type viewDataDictionary
+
+Entity Framework
+	- Used to access a database more accurately
+Two types of Workflow of an Entity Framework
+	- Code-First (better than database-first), 
+		- increase productivity
+		- Full versioning of database
+		- much easier to build an integration test db
+	- Database-First (traditional way to design tables)	
