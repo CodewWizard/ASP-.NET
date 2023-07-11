@@ -37,3 +37,5 @@ Two types of Workflow of an Entity Framework
 		- Full versioning of database
 		- much easier to build an integration test db
 	- Database-First (traditional way to design tables)	
+
+Code-first migration
