@@ -77,3 +77,7 @@ C:\Users\MadihaMujawar\Desktop\MVC\FirstWebApplication\FirstWebApplication\bin\M
 C:\Users\MadihaMujawar\Desktop\MVC\FirstWebApplication\FirstWebApplication\obj\Debug\FirstWebApplication.csproj.CopyComplete
 C:\Users\MadihaMujawar\Desktop\MVC\FirstWebApplication\FirstWebApplication\obj\Debug\FirstWebApplication.dll
 C:\Users\MadihaMujawar\Desktop\MVC\FirstWebApplication\FirstWebApplication\obj\Debug\FirstWebApplication.pdb
+C:\Users\MadihaMujawar\Desktop\MVC\FirstWebApplication\FirstWebApplication\bin\EntityFramework.dll
+C:\Users\MadihaMujawar\Desktop\MVC\FirstWebApplication\FirstWebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\MadihaMujawar\Desktop\MVC\FirstWebApplication\FirstWebApplication\bin\EntityFramework.xml
+C:\Users\MadihaMujawar\Desktop\MVC\FirstWebApplication\FirstWebApplication\bin\EntityFramework.SqlServer.xml

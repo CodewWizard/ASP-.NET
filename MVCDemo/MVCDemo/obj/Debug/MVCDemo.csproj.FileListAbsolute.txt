@@ -77,3 +77,7 @@ C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\MVCDemo\obj\Debug\MVCDemo.csproj.Core
 C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\MVCDemo\obj\Debug\MVCDemo.csproj.CopyComplete
 C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\MVCDemo\obj\Debug\MVCDemo.dll
 C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\MVCDemo\obj\Debug\MVCDemo.pdb
+C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\MVCDemo\bin\EntityFramework.dll
+C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\MVCDemo\bin\EntityFramework.SqlServer.dll
+C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\MVCDemo\bin\EntityFramework.xml
+C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\MVCDemo\bin\EntityFramework.SqlServer.xml

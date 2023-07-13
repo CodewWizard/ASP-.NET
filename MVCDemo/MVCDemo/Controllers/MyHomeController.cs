@@ -14,13 +14,14 @@ namespace MVCDemo.Controllers
             return "Hello from MVC Application and Id - " + id + " Name - " + name;
         }
 
-        // url = MVCDemo/getDetails
+        // url = controller/actionMethod
+        // url = MyHome/getDetails
         public string GetDetails()
         {
             return "get details in mvc";
         }
 
-        // url = MVCDemo/listOfCountries
+        // url = MyHome/listOfCountries
         public ActionResult ListOfCountries()
         {
             ViewBag.Countries = new List<string> 

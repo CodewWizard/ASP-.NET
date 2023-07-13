@@ -11,6 +11,9 @@ Controller
 	- Takes user input also called as request parameters
 	- Middle man between model and view
 
+- The controller responds to URL request, gets data from a model and hands it over to the view.The view then renders
+   the data. Model can be entities or buisness objects.
+
 - MVC is a design patterm
 - MVC pattern is used for building web, mobile, desktop app
  - ASP.net MVC is a .NEt framework which follows MVC design pattern
@@ -40,4 +43,18 @@ Two types of Workflow of an Entity Framework
 		- much easier to build an integration test db
 	- Database-First (traditional way to design tables)	
 
+ViewBag
+	- ViewBag is a dictionary of objects that are stored and retrieved using strings as keys.
+	- Syntax - viewBag.YourProperty = "SomeData";
+
+ViewData 
+	- It used dynamic feature
+	- It allows an object to have properties dynamically added to it.
+	- Syntax - viewData["YourKey"] = "SomeData";
+
+
  - ViewBag and ViewData is used to pass data from controller to view.
+ - Both ViewBag and ViewData are does not provide compile time errors checking. 
+
+what is strongly typed view
+	- The view which binds to a specific type of ViewModel is called as Strongly Typed View

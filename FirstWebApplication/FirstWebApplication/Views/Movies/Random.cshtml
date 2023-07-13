@@ -1,9 +1,31 @@
-﻿@model FirstWebApplication.Models.Movie
+﻿@model FirstWebApplication.ViewModels.RandomMovieViewModel
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>MVC application</h2>
-<h2>Returned view from Controller @Model.Name</h2>
+<h2>Returned view from Controller</h2>
+
+@{ 
+    var className = Model.Customers.Count > 0 ? "demo-class" : null;
+}
+
+<h1 class="@className">Name of the movie is @Model.Movie.Name</h1>
+<h2>List of Customers</h2>
+
+@if (Model.Customers.Count == 0) { 
+    <text>No one has rented this movie before.</text>
+}
+else
+{
+    <ul>
+        @foreach (var customer in Model.Customers)
+        {
+            <li>@customer.name</li>
+        }
+    </ul>
+}
+
+
 
