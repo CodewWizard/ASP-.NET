@@ -16,7 +16,6 @@
                         City = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
-            CreateTable
         }
         
         public override void Down()

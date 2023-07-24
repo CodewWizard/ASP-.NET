@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using MVCDemo.Models;
 
+
 namespace MVCDemo.Controllers
 {
     public class EmployeeController : Controller
@@ -17,15 +18,19 @@ namespace MVCDemo.Controllers
             return View(employee);
         }*/
 
-        public ActionResult Details()
+        public ActionResult Index(int departmentId)
         {
-            Employee emp = new Employee()
-            {
-                Id = 101,
-                Name = "Madiha",
-                City = "Solapur"
-            };
-            return View(emp);
+            EmployeeContext empContext = new EmployeeContext();
+            List<Employee> employees = empContext.Emps.Where(emp => emp.DepartmentID == departmentId).ToList();
+
+            return View(employees);
+        }
+
+        public ActionResult Details(int id)
+        {
+            EmployeeContext empContext = new EmployeeContext();
+            Employee em = empContext.Emps.Single(emp => emp.EmpId == id);
+            return View(em);
         }
     }
 }

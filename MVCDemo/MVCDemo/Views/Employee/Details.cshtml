@@ -4,24 +4,31 @@
     ViewBag.Title = "Employee Details";
 }
 
-<h2>Employee Details</h2>
+<div>
+    <h2>Employee Details</h2>
 
-<table>
-    <tr>
-        <td><b>Employee Id</b></td>
-        <td><b>Employee Name</b></td>
-        <td><b>Employee City</b></td>
+    <table border="1">
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee City</th>
+            <th>Employee Gender</th>
 
-    </tr>
+        </tr>
 
-    <tr>
-        <td>@Model.Id</td>
-        <td>@Model.Name</td>
-        <td>@Model.City</td>
+        <tr>
+            <td>@Model.EmpId</td>
+            <td>@Model.EmpName</td>
+            <td>@Model.EmpCity</td>
+            <td>@Model.EmpGender</td>
 
-    </tr>
+        </tr>
 
-</table>
+    </table>
+    <br />
+    <b>@Html.ActionLink("Back to List", "Index")</b>
+
+</div>
 
 
 

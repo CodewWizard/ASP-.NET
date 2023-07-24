@@ -7,9 +7,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MVCDemo.Models
 {
-    [Table("tblEmployee")]
+    [Table("codewizard-Employee")]
+
     public class EmployeeContext : DbContext
     {
+        public DbSet<Department> Depts { get; set; }
         public DbSet<Employee> Emps { get; set; }
     }
 }
