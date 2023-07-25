@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BusinessLayer.Employee>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartmentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpGender)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartmentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmpName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmpCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmpGender)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmpId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmpId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EmpId })
+        </td>
+    </tr>
+}
+
+</table>
