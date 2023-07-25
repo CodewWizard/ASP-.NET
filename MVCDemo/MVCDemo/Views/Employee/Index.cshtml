@@ -10,16 +10,17 @@
 
 <div>
     <h2>Employee List</h2>
+    <hr />
 
     <ul>
         @foreach (Employee employee in @Model)
         {
             <li>
-                <b>@Html.ActionLink(employee.EmpName, "Details", new { id = employee.EmpId })</b>
+                <h4><b>@Html.ActionLink(employee.EmpName, "Details", new { id = employee.EmpId })</b></h4>
             </li>
         }
     </ul>
-
+    <br />
     <b>@Html.ActionLink("Back to Department List", "Index", "Department")</b>
 </div>
 

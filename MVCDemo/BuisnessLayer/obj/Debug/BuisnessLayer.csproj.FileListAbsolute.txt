@@ -1,6 +1,0 @@
-C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\BuisnessLayer\bin\Debug\BuisnessLayer.dll
-C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\BuisnessLayer\bin\Debug\BuisnessLayer.pdb
-C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\BuisnessLayer\obj\Debug\BuisnessLayer.csproj.AssemblyReference.cache
-C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\BuisnessLayer\obj\Debug\BuisnessLayer.csproj.CoreCompileInputs.cache
-C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\BuisnessLayer\obj\Debug\BuisnessLayer.pdb
-C:\Users\MadihaMujawar\Desktop\MVC\MVCDemo\BuisnessLayer\obj\Debug\BuisnessLayer.csproj.CopyComplete

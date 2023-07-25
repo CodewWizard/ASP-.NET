@@ -7,11 +7,12 @@
 
 <div>
     <h2>Departments List</h2>
+    <hr />
     <ul>
         @foreach(Department department in @Model)
         {
         <li>
-            <b>@Html.ActionLink(department.DepartmentName, "Index", "Employee",new { departmentId = department.DepartmentId }, null)</b>
+            <h4><b>@Html.ActionLink(department.DepartmentName, "Index", "Employee",new { departmentId = department.DepartmentId }, null)</b></h4>
         </li>
         }
     </ul>
