@@ -13,6 +13,7 @@
             <th>Employee Name</th>
             <th>Employee City</th>
             <th>Employee Gender</th>
+            <th>Employee Dept ID</th>
 
         </tr>
 
@@ -21,12 +22,13 @@
             <td>@Model.EmpName</td>
             <td>@Model.EmpCity</td>
             <td>@Model.EmpGender</td>
+            <td>@Model.DepartmentId</td>
 
         </tr>
 
     </table>
     <br />
-    <b>@Html.ActionLink("Back to List", "Index")</b>
+    <b>@Html.ActionLink("Back to Employee List", "Index", new { departmentId = Model.DepartmentId})</b>
 
 </div>
 

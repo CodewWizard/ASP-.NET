@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,7 +21,7 @@ namespace MVCDemo.Controllers
         public ActionResult Index(int departmentId)
         {
             EmployeeContext empContext = new EmployeeContext();
-            List<Employee> employees = empContext.Emps.Where(emp => emp.DepartmentID == departmentId).ToList();
+            List<Employee> employees = empContext.Emps.Where(emp => emp.DepartmentId == departmentId).ToList();
 
             return View(employees);
         }

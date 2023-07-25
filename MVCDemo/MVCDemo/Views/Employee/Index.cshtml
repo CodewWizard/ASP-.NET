@@ -1,4 +1,7 @@
 ﻿@model IEnumerable<MVCDemo.Models.Employee>
+
+
+
 @using MVCDemo.Models;
 
 @{
@@ -7,14 +10,16 @@
 
 <div>
     <h2>Employee List</h2>
-        
+
     <ul>
-        @foreach(Employee employee in @Model)
-            {
-               <li>
-                   <b>@Html.ActionLink(employee.EmpName, "Details", new {id = employee.EmpId })</b>
-               </li>
-            }
+        @foreach (Employee employee in @Model)
+        {
+            <li>
+                <b>@Html.ActionLink(employee.EmpName, "Details", new { id = employee.EmpId })</b>
+            </li>
+        }
     </ul>
+
+    <b>@Html.ActionLink("Back to Department List", "Index", "Department")</b>
 </div>
 

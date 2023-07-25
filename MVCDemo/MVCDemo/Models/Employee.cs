@@ -11,9 +11,10 @@ namespace MVCDemo.Models
     {
         [System.ComponentModel.DataAnnotations.Key]
         public int EmpId { get; set; }
+        public int DepartmentId { get; set; }
         public string EmpName { get; set; }
         public string EmpCity { get; set; }
         public string EmpGender { get; set; }
-        public int DepartmentID { get; set; }
+        
     }
 }

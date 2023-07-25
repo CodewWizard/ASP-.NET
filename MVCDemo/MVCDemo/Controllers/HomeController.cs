@@ -10,6 +10,12 @@ namespace MVCDemo.Controllers
     {
         public ActionResult Index()
         {
+            ViewData["Countries"] = new List<string>()
+            {
+                "India",
+                "UK",
+                "USA"
+            };
             return View();
         }
 

@@ -11,7 +11,7 @@ namespace MVCDemo.Models
 
     public class EmployeeContext : DbContext
     {
-        public DbSet<Department> Depts { get; set; }
         public DbSet<Employee> Emps { get; set; }
+        public DbSet<Department> Depts { get; set; }
     }
 }
