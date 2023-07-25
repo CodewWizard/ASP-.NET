@@ -50,3 +50,16 @@ ViewData
 
 what is strongly typed view
 	- The view which binds to a specific type of ViewModel is called as Strongly Typed View
+
+EntityFrameWork-
+	Entities are mapper to database tables, and object relational mapping tools like entity framework etc are used to fetch and save the data
+
+Business Objects contain both state (data) and behaviour, that is logicspecific to the business
+
+
+
+
+
+
+
+
