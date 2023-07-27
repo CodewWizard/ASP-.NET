@@ -16,5 +16,10 @@ namespace MVCDemo.Controllers
 
             return View(employees);
         }
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }
