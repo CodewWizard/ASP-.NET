@@ -28,3 +28,11 @@ C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\obj\Debug\Business
 C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\bin\Debug\WebGrease.dll
+C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\bin\Debug\Antlr3.Runtime.dll
+C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\MadihaMujawar\Desktop\ASP-.NET\MVCDemo\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
