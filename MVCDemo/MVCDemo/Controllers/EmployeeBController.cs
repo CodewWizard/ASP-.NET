@@ -26,7 +26,7 @@ namespace MVCDemo.Controllers
 
         [HttpPost]
         [ActionName("Create")]
-        public ActionResult Create_Post(int EmpId, string EmpName, string EmpCity, string EmpGender, int DepartmentId)
+        public ActionResult Create_Post(Employee1 employee)
         {
             /*foreach(string key in formCollection.AllKeys)
             {
@@ -37,10 +37,6 @@ namespace MVCDemo.Controllers
             return View();*/
             if (ModelState.IsValid)
             {
-
-                Employee1 employee = new Employee1();
-                UpdateModel(employee);
-
                 EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
                 employeeBusinessLayer.AddEmployee(employee);
 
@@ -51,9 +47,12 @@ namespace MVCDemo.Controllers
                 return View();
             }
         }
-        public ActionResult Details()
+        [HttpGet]
+        public ActionResult Edit(int id)
         {
-            return View();
+            EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
+            Employee1 employee = employeeBusinessLayer.Employees.Single(emp => emp.EmpId == id);
+            return View(employee);
         }
     }
 }
