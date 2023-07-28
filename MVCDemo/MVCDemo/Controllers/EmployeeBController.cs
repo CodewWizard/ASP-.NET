@@ -18,13 +18,15 @@ namespace MVCDemo.Controllers
             return View(employees);
         }
         [HttpGet]
-        public ActionResult Create()
+        [ActionName("Create")]
+        public ActionResult Create_Get()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Create(FormCollection formCollection)
+        [ActionName("Create")]
+        public ActionResult Create_Post(int EmpId, string EmpName, string EmpCity, string EmpGender, int DepartmentId)
         {
             /*foreach(string key in formCollection.AllKeys)
             {
@@ -33,18 +35,21 @@ namespace MVCDemo.Controllers
                 Response.Write("<br/>");
             }
             return View();*/
+            if (ModelState.IsValid)
+            {
 
-            Employee1 employee = new Employee1();
-            employee.EmpId = Convert.ToInt32(formCollection["EmpId"]);
-            employee.EmpName = formCollection["EmpName"];
-            employee.EmpCity = formCollection["EmpCity"];
-            employee.EmpGender = formCollection["EmpGender"];
-            employee.DepartmentId = Convert.ToInt32(formCollection["DepartmentId"]);
+                Employee1 employee = new Employee1();
+                UpdateModel(employee);
 
-            EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
-            employeeBusinessLayer.AddEmployee(employee);
+                EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
+                employeeBusinessLayer.AddEmployee(employee);
 
-            return RedirectToAction("Index");
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
         }
         public ActionResult Details()
         {
