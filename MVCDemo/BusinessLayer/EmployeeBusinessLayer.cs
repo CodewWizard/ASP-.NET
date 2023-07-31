@@ -82,5 +82,45 @@ namespace BusinessLayer
                 cmd.ExecuteNonQuery();
             }
         }
+
+        public void SaveEmployee(Employee1 employee)
+        {
+            string connectionString =
+            ConfigurationManager.ConnectionStrings["EmployeeContext"].ConnectionString;
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("spSaveEmployee", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter paramId = new SqlParameter();
+                paramId.ParameterName = "@EmpId";
+                paramId.Value = employee.EmpId;
+                cmd.Parameters.Add(paramId);
+
+                SqlParameter paramName = new SqlParameter();
+                paramName.ParameterName = "@EmpName";
+                paramName.Value = employee.EmpName;
+                cmd.Parameters.Add(paramName);
+
+                SqlParameter paramGender = new SqlParameter();
+                paramGender.ParameterName = "@EmpGender";
+                paramGender.Value = employee.EmpGender;
+                cmd.Parameters.Add(paramGender);
+
+                SqlParameter paramCity = new SqlParameter();
+                paramCity.ParameterName = "@EmpCity";
+                paramCity.Value = employee.EmpCity;
+                cmd.Parameters.Add(paramCity);
+
+                SqlParameter paramDepartmentId = new SqlParameter();
+                paramDepartmentId.ParameterName = "@DepartmentId";
+                paramDepartmentId.Value = employee.DepartmentId;
+                cmd.Parameters.Add(paramDepartmentId);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }
